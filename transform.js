@@ -1,7 +1,7 @@
 const { contains } = require('ramda')
 
 const tags = require('./tags')
-const games = require('./dataset')
+const games = require('./dataset.json')
 
 const dataset = games.map(game => {
   const output = [ game.score_rank / 100 ]
